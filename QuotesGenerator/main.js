@@ -34,3 +34,5 @@ function shareTwitter() {
   const url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(selectQuote)}`;
   window.open(url, '_blank');
 }
+
+window.onload = generateQuotes;
