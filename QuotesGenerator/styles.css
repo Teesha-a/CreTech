@@ -1,0 +1,25 @@
+body{
+    background-color: azure;
+}
+div{
+    background-color: ;
+    text-align: center;
+    height: 300px;
+    width:700px;
+    position: 100vh;
+    margin: 100px ;
+    margin-left: 400px;
+    
+}
+h1{
+    margin-bottom: 30px;
+}
+p{
+    padding: 10%;
+    font-weight: bold;
+    background-color: bisque;
+    color:brown
+}
+button{
+    margin-top: 50px;
+}
