@@ -1,17 +1,21 @@
-const form = document.getElementById('cardForm');
+window.onload = () => {
+  // Get data from localStorage
+  const name = localStorage.getItem('name');
+  const message = localStorage.getItem('message');
+  const occasion = localStorage.getItem('occasion');
 
-form.addEventListener('submit', function(e) {
-  e.preventDefault();
+  // Update the card with the personalized details
+  document.getElementById('cardName').textContent = `– From ${name}`;
+  document.getElementById('cardMessage').textContent = message;
+  document.getElementById('cardOccasion').textContent = `Happy ${occasion}!`;
 
-  const name = document.getElementById('name').value;
-  const message = document.getElementById('message').value;
-  const occasion = document.getElementById('occasion').value;
-
-  // Store form data in localStorage
-  localStorage.setItem('name', name);
-  localStorage.setItem('message', message);
-  localStorage.setItem('occasion', occasion);
-
-  // Redirect to greeting card page
-  window.location.href = 'greetingCard.html';
-});
+  // Show the download button
+  document.getElementById('downloadBtn').addEventListener('click', function() {
+    html2canvas(document.querySelector(".card")).then(canvas => {
+      const link = document.createElement('a');
+      link.download = 'greeting_card.png';
+      link.href = canvas.toDataURL();
+      link.click();
+    });
+  });
+}

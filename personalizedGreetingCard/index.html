@@ -11,7 +11,7 @@
 <body>
   <div class="container d-flex justify-content-center align-items-center vh-100">
     <div class="card p-5 shadow-lg" style="max-width: 600px; border-radius: 20px;">
-      <h1 class="text-center text-light mb-4">🎨 Make Your Own Greeting Card 🎨</h1>
+      <h1 class="text-center text mb-4"> Make Your Own Greeting Card </h1>
 
       <!-- Form for Input -->
       <form id="cardForm">
@@ -24,20 +24,8 @@
         <div class="form-group">
           <textarea id="message" class="form-control form-control-lg" placeholder="Enter Your Message" required></textarea>
         </div>
-        <button type="submit" class="btn btn-lg btn-success btn-block">Generate Card</button>
+        <button type="submit" class="btn btn-lg btn-outline-light btn-block">Generate Card</button>
       </form>
-
-      <!-- Card Preview -->
-      <div id="card" class="card mt-4" style="display: none;">
-        <div class="card-body text-center" style="background: linear-gradient(45deg, #FF6F61, #FFD700); color: #fff; border-radius: 15px;">
-          <h2 id="cardOccasion" class="card-title" style="font-size: 2.5rem; font-weight: 600;"></h2>
-          <p id="cardMessage" style="font-size: 1.5rem; line-height: 1.5;"></p>
-          <h3 id="cardName" class="card-footer" style="font-size: 1.8rem; font-weight: 600;"></h3>
-        </div>
-      </div>
-
-      <!-- Download Button -->
-      <button id="downloadBtn" class="btn btn-lg btn-info btn-block mt-4" style="display: none;">Download Your Card</button>
     </div>
   </div>
 

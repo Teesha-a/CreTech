@@ -1,46 +1,87 @@
+/* Global Styling */
 body {
-  background: linear-gradient(to bottom right, #ff7eb9, #ff65a3);
-  font-family: 'Arial', sans-serif;
+  background-image: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0;
+  margin: 0;
+  height: 100%;
 }
 
 h1 {
-  font-size: 2.5rem;
-  font-weight: 600;
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .card {
-  background: #ffffff;
+  background:linear-gradient(to top, #df89b5 0%, #bfd9fe 100%);
+  border-radius: 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.form-control {
+  border-radius: 10px;
+  padding: 1rem;
+  font-size: 1.2rem;
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 10px rgba(255, 105, 135, 0.8);
+}
+
+button {
   border-radius: 20px;
-  padding: 2rem;
-}
-
-form input, form textarea {
-  border-radius: 8px;
+  padding: 1rem;
   font-size: 1.2rem;
-}
-
-form button {
-  font-size: 1.2rem;
-  padding: 0.75rem;
-  border-radius: 8px;
 }
 
 #card {
-  background: #fff4e6;
-  border-radius: 15px;
+  display: none;
   padding: 20px;
+  border-radius: 20px;
+  
 }
 
 #cardOccasion {
-  font-size: 2rem;
-  font-weight: bold;
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 600;
+  
 }
 
 #cardMessage {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+  color: #fff;
+  line-height: 1.5;
+  
 }
 
 #cardName {
-  font-size: 1.25rem;
+  color: #fff;
+  font-size: 2rem;
   font-weight: 600;
+}
+
+#downloadBtn {
+  display: none;
+  margin-top: 20px;
+}
+
+.card-body {
+  border-radius: 15px;
+  padding: 20px;
+  background-image: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
+}
+.card-footer {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffeb3b;
 }
