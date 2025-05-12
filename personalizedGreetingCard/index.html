@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personalized Greeting Card</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container d-flex justify-content-center align-items-center vh-100">
+    <div class="card p-5 shadow-lg" style="max-width: 600px; border-radius: 20px;">
+      <h1 class="text-center text-light mb-4">🎨 Make Your Own Greeting Card 🎨</h1>
+
+      <!-- Form for Input -->
+      <form id="cardForm">
+        <div class="form-group">
+          <input type="text" id="name" class="form-control form-control-lg" placeholder="Enter Name" required>
+        </div>
+        <div class="form-group">
+          <input type="text" id="occasion" class="form-control form-control-lg" placeholder="Enter Occasion" required>
+        </div>
+        <div class="form-group">
+          <textarea id="message" class="form-control form-control-lg" placeholder="Enter Your Message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-lg btn-success btn-block">Generate Card</button>
+      </form>
+
+      <!-- Card Preview -->
+      <div id="card" class="card mt-4" style="display: none;">
+        <div class="card-body text-center" style="background: linear-gradient(45deg, #FF6F61, #FFD700); color: #fff; border-radius: 15px;">
+          <h2 id="cardOccasion" class="card-title" style="font-size: 2.5rem; font-weight: 600;"></h2>
+          <p id="cardMessage" style="font-size: 1.5rem; line-height: 1.5;"></p>
+          <h3 id="cardName" class="card-footer" style="font-size: 1.8rem; font-weight: 600;"></h3>
+        </div>
+      </div>
+
+      <!-- Download Button -->
+      <button id="downloadBtn" class="btn btn-lg btn-info btn-block mt-4" style="display: none;">Download Your Card</button>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS and html2canvas -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
