@@ -22,3 +22,15 @@ function generateQuotes(){
     quoteDisplay.textContent=selectQuote;
 }
 generateBtn.addEventListener('click', generateQuotes);
+
+function shareWhatsApp() {
+  const selectQuote = quoteDisplay.textContent;
+  const url = `https://api.whatsapp.com/send?text=${encodeURIComponent(selectQuote)}`;
+  window.open(url, '_blank');
+}
+
+function shareTwitter() {
+  const selectQuote = quoteDisplay.textContent;
+  const url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(selectQuote)}`;
+  window.open(url, '_blank');
+}

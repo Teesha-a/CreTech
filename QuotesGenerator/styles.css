@@ -14,13 +14,21 @@ div{
 h1{
     margin-bottom: 30px;
 }
+h5{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    font-size: medium;
+    color:darkgrey;
+    
+
+}
 p{
     padding: 10%;
     font-family: 'Times New Roman', Times, serif;
     font-size: larger;
     font-weight: bold;
-    color:brown
+    color:#6fad78;
 }
 button{
-    margin-top: 50px;
+    margin-top: 15px;
 }
